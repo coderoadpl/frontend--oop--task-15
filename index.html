@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div class="counter-1"></div>
+    <div class="counter-2"></div>
+
+    <script src="./Header.js"></script>
+    <script src="./Button.js"></script>
+    <script src="./Counter.js"></script>
+    <script src="./DecreasingCounter.js"></script>
+    <script src="./myOwnNew.js"></script>
+    <script>
+        const person1 = myOwnNew(Person, ['Mateusz'])
+        person1.sayMyName()
+
+        const counter1 = myOwnNew(Counter, ['.counter-1'])
+        counter1.init()
+        const counter2 = myOwnNew(DecreasingCounter, ['.counter-2'])
+        counter2.init()
+    </script>
+
+</body>
+
+</html>
